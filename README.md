@@ -1,13 +1,12 @@
-# EventHub — Plateforme de gestion et de réservation des événements des clubs étudiants
+# Ev entHub — Plateforme de gestion et de réservation des événements des clubs étudiants
 
 > **Mini-projet Angular 22** — Évaluation Pratique  
 > **Module** : Développement côté client · Framework côté client  
 > **Public** : Étudiants de 2e année DSI — ISET Radès  
 > **Année universitaire** : 2026 – 2027  
 > **Auteur** : Ghaith Mnasri (`botti33`)  
-> **Dépôt Git** : [https://github.com/botti33/angular-mini-project-ghaith-mnasri.git](https://github.com/botti33/angular-mini-project-ghaith-mnasri.git)
 
----
+
 
 ## 1. Présentation du projet
 
@@ -26,11 +25,7 @@ Elle résout le problème de gestion et d'inscription aux événements organisé
 
 Conformément au planning et aux livrables prévus par le cahier des charges :
 
-| Jalon | Échéance | Contenu attendu | Statut |
-| :--- | :--- | :--- | :---: |
-| **J0 — Lancement** | Semaine du 09/11/2026 | Dépôt créé et partagé, projet initialisé, modèles et données en place | **RÉALISÉ** |
-| **Jn — Points de suivi** | Séances TP hebdomadaires | Suivi de l'avancement et encadrement | À venir |
-| **Jf — Soutenance finale** | Semaine du 28/12/2026 | Dépôt final avec tag `v1.0`, captures dans `docs/`, démonstration | À venir |
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
 ### Éléments mis en place pour J0 :
 - **Initialisation du projet** : Angular CLI 22.1.8 en mode standalone strict, sans `NgModule`.
@@ -118,32 +113,3 @@ src/app/
 ├── pipes/                  # [Étapes suivantes] filtre-evenements, tri-evenements, etat-places
 ├── composants/             # [Étapes suivantes] en-tete, pied-page, carte-evenement, badge-categorie
 └── pages/                  # [Étapes suivantes] liste, detail, reservation, mes-reservations, ...
-```
-
----
-
-## 6. Suivi des exigences (Matrice de conformité)
-
-| Identifiant | Description | Type | Statut |
-| :--- | :--- | :---: | :---: |
-| **ET-01** | Projet Angular CLI 22, composants standalone (0 NgModule) | Technique | Validé |
-| **ET-02** | Convention de nommage sans suffixe (`carte-evenement.ts`, etc.) | Technique | En cours |
-| **ET-03** | Nouvelle syntaxe de flux uniquement (`@if`, `@for`, `@switch`, `@defer`) | Technique | En cours |
-| **ET-04** | Injection de dépendances avec `inject()` | Technique | Prévu |
-| **ET-05** | Accès aux données via services uniquement | Technique | Prévu |
-| **ET-06** | État partagé conservé dans des signals en lecture seule (`asReadonly()`) | Technique | Prévu |
-| **ET-07** | Mises à jour immuables des tableaux (spread, filter, map) | Technique | Prévu |
-| **ET-08** | Formulaires réactifs (`ReactiveFormsModule`) sans `ngModel` de saisie | Technique | Prévu |
-| **ET-09** | Routes déclarées dans `app.routes.ts` avec lazy loading (`loadComponent`) | Technique | Prévu |
-| **ET-10** | CSS fait main, aucun framework UI tiers | Technique | Prévu |
-| **ET-11** | Projet compile sans erreur avec `ng build` | Technique | Validé |
-| **EF-01** | Structure générale (en-tête, `<router-outlet>`, pied-page avec `@defer`) | Fonctionnelle | À venir |
-| **EF-02** | Liste des événements (`@for`, carte, badge `@switch`, favoris `output()`) | Fonctionnelle | À venir |
-| **EF-03** | Recherche, filtres et tri (2 pipes personnalisés + pipe `etatPlaces`) | Fonctionnelle | À venir |
-| **EF-04** | Détail d'un événement (`withComponentInputBinding`, barre de remplissage) | Fonctionnelle | À venir |
-| **EF-05** | Connexion et protection des routes (`authGuard`, `organisateurGuard`) | Fonctionnelle | À venir |
-| **EF-06** | Réservation de places (formulaire réactif + validateur personnalisé) | Fonctionnelle | À venir |
-| **EF-07** | Mes réservations (annulation, libération des places, compteur en-tête) | Fonctionnelle | À venir |
-| **EF-08** | Création d'un événement organisateur (`dateFuture`, redirection) | Fonctionnelle | À venir |
-| **EF-09** | Page introuvable (route wildcard `**`, page 404) | Fonctionnelle | À venir |
-| **EF-10** | Fonctionnalités bonus (localStorage, dashboard `computed()`, responsive) | Bonus | À venir |
